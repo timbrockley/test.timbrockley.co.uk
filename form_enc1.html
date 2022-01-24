@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<script src="libs/TB.CryptoRSA_103_20211111_1045.min.js"></script>
+<script src="form_enc1.js"></script>
+
+<style>
+table { width: 100%; margin: 20px auto; table-layout: auto; }
+table, td, th { border-collapse: collapse; }
+td { padding: 4px; }
+</style>
+
+</head>
+
+<body>
+
+<h3>formsubmit.co</h3>
+
+<form id="form1" method="POST" onsubmit="submitForm(this);return false;">
+<table>
+<tr>
+<td>Name</td>
+<td><input name="name" id="name" type="text" size="40"></td>
+</tr>
+<tr>
+<td>Email</td>
+<td><input name="email" id="email" type="text" size="40"></td>
+</tr>
+<tr>
+<td>Message</td>
+<td><textarea name="message" id="message" cols="100" rows="10"></textarea></td>
+</tr>
+<tr>
+<td></td>
+<td><input value="Submit" type="submit"></td>
+</tr>
+</table>
+<input type="hidden" name="_captcha" value="false">
+<!-- spammer honeypot --><input name="_formsubmit_id" type="hidden" style="display:block"><!-- spammer honeypot -->
+<input type="hidden" name="_subject" value="test.timbrockley.co.uk">
+<input type="hidden" name="data" value="" size="80">
+</form>
+
+<div id="form_status"></div>
+
+</body>
+</html>
